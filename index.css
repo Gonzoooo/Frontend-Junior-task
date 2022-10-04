@@ -1,0 +1,246 @@
+.page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header__logo {
+    object-fit: contain;
+}
+
+.header__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1240px;
+}
+
+.form {
+    width: 100%;
+    margin: 0 74px 0 60px;
+    position: relative;
+}
+
+.form__icon {
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background: url("./images/Search.png") no-repeat;
+}
+
+.form__input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    padding: 0 0 0 36px;
+}
+
+.form__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #BBC4D6;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #EBEBF1;
+    padding: 0 0 0 19px;
+    height: 100%;
+}
+
+.profile__name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: #768298;
+}
+
+.profile__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+}
+
+.profile__avatar:hover {
+    cursor: pointer;
+}
+
+.profile__icon {
+    display: none;
+    background-image: url("https://i.postimg.cc/d30dY8pk/profile-Icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    max-width: 1240px;
+    margin: 70px auto 0;
+}
+
+.main__header {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 160%;
+    color: #121920;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main__partners {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+.main__partner {
+    width: 285.5px;
+    height: 116px;
+    background-color: #FFFFFF;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.main__partner:hover {
+    cursor: pointer;
+    box-shadow: -3px 0 40px rgba(0, 0, 0, 0.1), 0 0 10px rgba(164, 164, 164, 0.03);
+}
+
+@media screen and (max-width: 1279px){
+    .page {
+        max-width: 768px;
+    }
+
+    .header__container {
+        max-width: 728px;
+    }
+
+    .form {
+        margin: 0 64px 0 50px;
+    }
+
+    .form__input {
+        max-width: 344px;
+    }
+
+    .main__header {
+        font-size: 28px;
+    }
+
+    .main {
+        max-width: 728px;
+    }
+
+    .main__partners {
+        gap: 18px;
+    }
+
+    .main__partner {
+        width: 227px;
+        height: 116px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .page {
+        max-width: 375px;
+    }
+
+    .header {
+        box-shadow: none;
+    }
+
+    .header__container {
+        position: relative;
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        margin-left: 21px;
+    }
+
+    .form {
+        margin: 0;
+        position: absolute;
+        top: 63px;
+        right: 0;
+    }
+
+    .form__icon {
+        top: 51%;
+        left: 22px;
+        transform: translate(0, -51%);
+    }
+
+    .form__input {
+        border-top: 1px solid #BBC4D6;
+        border-left: none;
+        border-right: none;
+        opacity: 50%;
+        border-radius: 0;
+        background: #FFFFFF;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        max-width: 324px;
+        padding: 0 0 0 48px;
+    }
+
+    .form__input::placeholder {
+        letter-spacing: 0;
+    }
+
+    .profile {
+        border: none;
+        margin-right: 21px;
+    }
+
+    .profile__name {
+        display: none;
+    }
+
+    .profile__avatar {
+        display: none;
+    }
+
+    .profile__icon {
+        display: table;
+        width: 24px;
+        height: 24px;
+    }
+
+    .main {
+        max-width: 335px;
+        margin: 106px auto 0;
+    }
+
+    .main__partner {
+        width: 333px;
+        height: 136px;
+    }
+}
